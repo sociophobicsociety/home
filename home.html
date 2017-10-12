@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>homepage</title>
+<link href="homeStyle.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="miniicon.png">
+</head>
+
+<body>
+  <h1>
+    <img src="babyv4v4.png" alt="logo" style="width:100%px;height:auto" id="headerLogo">
+  </h1>
+  
+  <div id="links" style="max-width:100%;height:auto">
+    |
+    <a href="/Users/andreww/Desktop/t/shop.html" id="shopLink" class="link" style="width:125px;height:auto">shop</a>
+    |
+    <a href="http://www.supremenewyork.com/index" id="blogLink" class="link" style="width:125px;height:auto">blog</a>
+    |
+    <a href="http://www.supremenewyork.com/index" id="aboutLink" class="link" style="width:125px;height:auto">about</a>
+    |
+    <a href="http://www.supremenewyork.com/index" id="lookbookLink" class="link" style="width:125px;height:auto">lookbook <span style="font-size: 50%">SS18</span></a>
+    |
+    <a href="http://www.supremenewyork.com/index" id="previewLink" class="link" style="width:125px;height:auto">preview <span style="font-size: 50%">SS18</span></a>
+    |
+  </div>
+  
+  <p id="date2" name="datedisplay4">
+   meme
+  <script>
+    function stuff() {
+    var today = new Date();
+    var day = today.getDate();
+    var month = today.getMonth() + 1;
+    var year = today.getFullYear();
+    document.getElementById('date2').innerHTML = month + "/" + day + "/" + year;
+    }
+    
+  stuff();
+  </script>
+</p>
+
+<p id="timeSimple" name="datedisplay2">
+<script>
+
+function startTime() {
+  var today = new Date();
+  var hrs = today.getHours();
+  var set = "AM";
+  if (hrs > 12) {
+      hrs = hrs - 12;
+      set = "PM";
+  }
+  if (hrs > 12) {
+      hrs = hrs - 12;
+      set = "AM";
+  }
+  var mins = today.getMinutes();
+  if (mins < 10) {
+      mins = "0" + mins;
+  }
+  document.getElementById("timeSimple").innerHTML = hrs + ":" + mins + " " + set;
+}
+
+startTime();
+</script>
+</p>
+</body>
+</html>
